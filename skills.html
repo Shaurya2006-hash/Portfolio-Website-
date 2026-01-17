@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Shaurya Aggarwal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #f4f4f9;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ff0054;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    header nav ul li a:hover {
+      color: #ffcc00;
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      color: #ffd60a;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    p.intro {
+      font-size: 1.1rem;
+      color: #dcdcdc;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+    /* Skill grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px 15px;
+      border-radius: 18px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 204, 0, 0.4);
+    }
+
+    .skill-card i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #00eaff;
+    }
+
+    .skill-card h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .progress-bar {
+      width: 90%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress {
+      height: 10px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #00eaff, #00ff99);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .c .progress { width: 90%; }
+    .python .progress { width: 85%; }
+    .html .progress { width: 80%; }
+    .css .progress { width: 75%; }
+    .github .progress { width: 70%; }
+    .sql .progress { width: 65%; }
+    .cpp .progress { width: 60%; }
+
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="PersonalPortfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>My Skills</h1>
+    <p class="intro">
+      A blend of programming and development skills I’ve honed through hands-on projects and practice.
+    </p>
+
+    <div class="skills-grid">
+      <div class="skill-card c">
+        <i class="fa-solid fa-code"></i>
+        <h3>C Programming</h3>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card python">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card html">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card css">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+
+      <div class="skill-card github">
+        <i class="fa-brands fa-github"></i>
+        <h3>Git & GitHub</h3>
+        <div class="progress-bar"><div class="progress"></div></div>
+      </div>
+        <div class="skill-card sql">
+            <i class="fa-solid fa-database"></i>
+            <h3>SQL</h3>
+            <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+        <div class="skill-card cpp">
+            <i class="fa-brands fa-cuttlefish"></i>
+            <h3>C++</h3>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+  </div>
+</body>
+</html>

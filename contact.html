@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Shaurya Aggarwal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      background-color: #0e3a6d; 
+      color: #f8f9fa;
+      text-align: center;
+    }
+
+    header {
+      background-color: #d90429;
+      padding: 15px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd166;
+    }
+
+    .contact-box {
+      width: 80%;
+      max-width: 750px;
+      margin: 70px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      color: #00e0ff;
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    p.desc {
+      color: #d9d9d9;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    button {
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    button:hover {
+      background: #005f8a;
+      transform: scale(1.05);
+    }
+
+    .social {
+      margin-top: 35px;
+    }
+
+    .social a {
+      color: #00e0ff;
+      font-size: 1.6rem;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #ffd166;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="PersonalPortfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-box">
+    <h1>Contact Me</h1>
+    <p class="desc">Want to collaborate or just say hello? Fill out the form below.</p>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Full Name" required>
+      <input type="email" id="email" placeholder="Your Email Address" required>
+      <textarea id="message" placeholder="Type your message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formStatus" style="margin-top:15px; font-weight:600;"></p>
+
+    <div class="social">
+      <a href="mailto:shauryaaggnoida1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/Shaurya2006-hash" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/shaurya-aggarwal" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://instagram.com/shauryaaggarwal53" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <script src="CodeClassroom/form.js"></script>
+</body>
+</html>

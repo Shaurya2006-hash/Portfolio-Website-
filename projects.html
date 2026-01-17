@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Shaurya Aggarwal</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f4f4f9;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ff0054;
+      padding: 15px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin: 0 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.2s;
+    }
+
+    header nav ul li a:hover {
+      color: #ffcc00;
+      transform: scale(1.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      color: #ffd60a;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    p.intro {
+      font-size: 1.1rem;
+      color: #dcdcdc;
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+
+    /* Project grid */
+    .projects-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 35px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.08);
+      width: 320px;
+      padding: 25px 20px;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 35px rgba(255, 204, 0, 0.4);
+    }
+
+    .project-card h2 {
+      color: #00eaff;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin-bottom: 25px;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff0054, #ff5400);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #ff7b00, #ff0054);
+      transform: scale(1.07);
+    }
+    .project-card:nth-child(2) {
+      border: 2px solid #00eaff;
+    }
+    .project-card:nth-child(3) {
+      border: 2px solid #ffd60a;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="PersonalPortfolio.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>My Projects</h1>
+    <p class="intro">
+      Here are some of my featured programming projects demonstrating my skills in C and Python development.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- Telecom Billing System -->
+      <div class="project-card">
+        <h2> Telecom Billing System</h2>
+        <p>
+          A console-based Telecom Billing System in C.  
+          It manages customer details, generates bills, and maintains call records efficiently.
+        </p>
+        <a href="https://github.com/Shaurya2006-hash/Telecom-Billing-System" target="_blank" class="btn">
+          <i class="fa-brands fa-github"></i> View Source Code
+        </a>
+      </div>
+
+      <!-- Task Management System -->
+      <div class="project-card">
+        <h2> Task Management System</h2>
+        <p>
+          A C-based project to add, view, edit, and delete tasks.  
+          Uses file handling to store and retrieve user data for task management.
+        </p>
+        <a href="https://github.com/Shaurya2006-hash/Task-Management-System" target="_blank" class="btn">
+          <i class="fa-brands fa-github"></i> View Source Code
+        </a>
+      </div>
+
+      <!-- Library Management System -->
+      <div class="project-card">
+        <h2>📚 Library Management System</h2>
+        <p>
+          A Python-based Library Management System that allows users to issue, return, and search books easily.  
+          Helps manage student and book records with a user-friendly console interface.
+        </p>
+        <a href="https://github.com/Shaurya2006-hash/Library-Management-System" target="_blank" class="btn">
+          <i class="fa-brands fa-github"></i> View Source Code
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
